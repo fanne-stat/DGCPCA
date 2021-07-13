@@ -1,11 +1,25 @@
 Package: DGCPCA
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Discrete Gaussian Copula PCA
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: c(person("Yifan", "Zhu", , "fannechu@gmail.com", c("aut", "cre")))
+Maintainer: Yifan Zhu <fannechu@gmail.com>
+Description: Performing PCA for datasets with numerical discrete features
+    or ordinal catagorical features using Gaussian Copula.
+License: GPL-3
+URL: https://github.com/fanne-stat/DGCPCA
+BugReports: https://github.com/fanne-stat/DGCPCA/issues
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 3.5.0)
+RoxygenNote: 7.1.1
+Imports: 
+    foreach,
+    doParallel,
+    pbv,
+    pcaPP,
+    plyr,
+    TruncatedNormal,
+    bigstatsr,
+    Matrix

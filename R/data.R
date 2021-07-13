@@ -1,0 +1,12 @@
+#' SPECT Heart Data Set
+#'
+#' The dataset describes diagnosing of cardiac Single Proton Emission Computed Tomography (SPECT) images. Each of the patients is classified into two categories: normal and abnormal. The database of 267 SPECT image sets (patients) was processed to extract features that summarize the original SPECT images. As a result, 44 continuous feature pattern was created for each patient. The pattern was further processed to obtain 22 binary feature patterns.
+#'
+#' @format A data frame with 267 rows and 23 variables:
+#' \describe{
+#'     \item{F1 - F22}{the partial diagnosis, binary}
+#'     \item{class}{class attribute, binary (0 - normal, 1 - abnormal)}
+#'     }
+#'@source{\url{https://archive.ics.uci.edu/ml/datasets/SPECT+Heart}}
+#'
+"SPECT"

@@ -1,7 +1,7 @@
 Package: DGCPCA
 Type: Package
 Title: Discrete Gaussian Copula PCA
-Version: 0.1.0
+Version: 0.1.1
 Author: c(person("Yifan", "Zhu", , "fannechu@gmail.com", c("aut", "cre")))
 Maintainer: Yifan Zhu <fannechu@gmail.com>
 Description: Performing PCA for datasets with numerical discrete features

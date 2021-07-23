@@ -124,9 +124,9 @@ dcoca_corr_rho_solving <- function(mapped_data, probs, nearPDproj = F, ncores = 
     }
   tau_corr <- sigmahat_tau[]
   if (nearPDproj){
-    sigmahat_tau <- Matrix::nearPD(tau_corr)$mat
+    tau_corr <- Matrix::nearPD(tau_corr)$mat
   }
-  res$tau_corr <- tau_corr
+  res$tau_corr <- as.matrix(tau_corr)
   parallel::stopCluster(cl)
 
   return(res)
